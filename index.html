@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // SEU CODIGO AQUI
+      const firebaseConfig = {
+  apiKey: "AIzaSyDUa7RnQ7Vliz6-Awsnf6kzrI7weXVqm64",
+  authDomain: "goku-fe50c.firebaseapp.com",
+  databaseURL: "https://goku-fe50c-default-rtdb.firebaseio.com",
+  projectId: "goku-fe50c",
+  storageBucket: "goku-fe50c.appspot.com",
+  messagingSenderId: "1039697327146",
+  appId: "1:1039697327146:web:62198ef8785bbf4b963f53"
+};
+  
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+        
+
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
